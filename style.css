@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+/* Propiedades generales */
+:root {
+    --blanco: rgb(233, 233, 233);
+    --gris: rgb(190, 190, 190);
+    --negro: rgb(0, 0, 0);
+    --grisOscurito: rgba(0, 0, 0, 0.603);
+    --blueNationalStream: #f53c4b;
+
+    --sm: 18px;
+    --md: 20px;
+    --lg: 24px;
+}
+
+html, body{
+    min-height: 100vh;
+}
+
+body {    
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--grisOscurito);
+}
+
+nav {
+    background-color: var(--gris);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--blueNationalStream);
+}        
+
+.inactive{
+    display: none;
+}
+
+
+/* Parte izquierda de la Navbar */
+.letf-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.lmenu img{
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.lmenu img:hover{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--grisOscurito);
+    cursor: pointer;      
+}
+
+.logo{
+    position: relative;
+    width: 150px;
+    height: 50px;
+}
+.logo:hover{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+ 
+
+/* Parte dereche de la Navbar */
+.right-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    width: 70px;
+    height: 50px;
+    margin-right: 20px;
+    
+}
+
+.items:hover{
+    width: 70px;
+    background-color: var(--grisOscurito);
+    cursor: pointer;
+    color: var(--blueNationalStream);
+    margin-right: 20px;
+}
+
+.usuario{
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+    margin: 5px 5px;
+}
+
+.usuario:hover{
+    cursor: pointer;
+    margin: 5px 5px;
+    padding: 8px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--blueNationalStream);
+}
+
+ /* Parte central de la Navbar */
+ .center-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;            
+    padding: 0px 4px 0px 16px;            
+}
+
+.barra-busqueda{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    border-color: transparent var(--blueNationalStream) transparent transparent;
+    width: 300px;
+    height: 24px;
+    border-radius: 30px 0 0 30px;
+    padding-left: 25px;
+    border-right: 1px solid var(--blueNationalStream);
+    outline: none;
+    background-color: var(--grisOscurito);
+    color: var(--blanco);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+.barra-busqueda:focus{
+    width: 300px;    
+    border: 2px var(--blueNationalStream) solid;      
+}
+
+.busqueda{
+    width: 20px;
+    height: 30px;
+    padding: 0 18px;
+    background-color: var(--grisOscurito);
+    border-radius: 0 30px 30px 0;            
+}
+
+.busqueda:hover{
+    cursor: pointer;
+    background-color: var(--blueNationalStream);
+}
+
+/* menu lateral */
+
+.barlateral{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--gris);    
+}
+
+.barlateral img{
+    position: absolute;
+    top: 2px; left: 220px;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.barlateral img:hover{
+    width: 15px;
+    height: 15px;
+    background-color: var(--grisOscurito);
+    border-radius: 100%;
+    cursor: pointer;
+}
