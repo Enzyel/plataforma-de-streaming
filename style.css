@@ -25,6 +25,7 @@ body {
 }
 
 nav {
+    width: 100vh;
     background-color: var(--gris);
     display: flex;
     justify-content: space-between;
@@ -188,4 +189,8 @@ nav {
     background-color: var(--grisOscurito);
     border-radius: 100%;
     cursor: pointer;
+}
+
+@media (min-width: 640px){
+
 }
