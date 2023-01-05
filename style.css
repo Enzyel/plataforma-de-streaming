@@ -25,7 +25,7 @@ body {
 }
 
 nav {
-    width: 100vh;
+    width: auto;
     background-color: var(--gris);
     display: flex;
     justify-content: space-between;
